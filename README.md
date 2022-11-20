@@ -1,4 +1,4 @@
-# xpubsub
+# [xpubsub](https://pypi.org/project/tox)
 A basic pubsub module for communications within an app.
 
 This project is an excercise to help me develop skills relating to:
