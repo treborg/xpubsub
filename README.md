@@ -1,4 +1,4 @@
-# [xpubsub](https://pypi.org/project/tox)
+# [xpubsub](https://pypi.org/project/xpubsub)
 A basic pubsub module for communications within an app.
 
 This project is an excercise to help me develop skills relating to:
@@ -27,7 +27,7 @@ pub.remove(topic_list: HashOrList, callback: Callable):
 pub.send(topic_list: HashOrList, message: Any):
 ```
 
-## Example:
+## Example: example.py
 ```python
 from xpubsub import PubSub
 

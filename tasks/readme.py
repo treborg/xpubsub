@@ -24,8 +24,8 @@ def runfile(fn):
     return result.stdout
 
 
-def main(source):
-    lines = readfile(source).splitlines()
+def compose(tpl):
+    lines = readfile(tpl).splitlines()
     for i, line in enumerate(lines):
         if line.startswith("{%I"):
             fn = line[3:].strip()
@@ -36,7 +36,9 @@ def main(source):
     return "\n".join(lines)
 
 
+def compose_readme():
+    writefile("README.md", compose(".readme.tpl"))
+
+
 if __name__ == "__main__":
-    target = "README.md"
-    source = ".readme.tpl"
-    writefile(target, main(source))
+    compose_readme()
