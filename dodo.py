@@ -2,7 +2,7 @@ from tasks.readme import compose_readme
 
 
 def task_readme():
-    """Create README.md from .readme.tpl"""
+    """Create README.md from .readme.tpl.md"""
 
     return {
         "actions": [compose_readme],

@@ -37,7 +37,7 @@ def compose(tpl):
 
 
 def compose_readme():
-    writefile("README.md", compose(".readme.tpl"))
+    writefile("README.md", compose(".readme.tpl.md"))
 
 
 if __name__ == "__main__":
